@@ -1,6 +1,3 @@
-# One milestone, many projects
+# A plan and a prototype
 
-A job application by Richard J. Valeo for the Product Manager role at Linear.
-Unofficial. Built from public pages. Not affiliated with Linear.
-
-Run `python build.py` to rebuild the pages.
+A job application by Richard J. Valeo. Unofficial. Built from public pages.

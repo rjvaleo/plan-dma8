@@ -1,0 +1,70 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>Shared milestones prototype · Richard J. Valeo</title><meta name="description" content="A clickable prototype of milestones shared across projects, with what each one carried over. Sample data."><link rel="stylesheet" href="assets/site.css"></head><body><a class="skip" href="#main">Skip to content</a><div class="flag"><div class="w"><b>Unofficial.</b> A job application for Linear&rsquo;s Product Manager role, built from public pages. Not affiliated with Linear.</div></div><header class="w nav"><a class="me" href="index.html"><i></i>Richard J. Valeo</a><nav aria-label="Pages"><a href="index.html">The proposal</a><a href="evidence.html">The evidence</a><a href="prototype.html" aria-current="page">The prototype</a><a href="how.html">How I built it</a><a href="why.html">Why me</a></nav></header><main id="main"><div class="w hero" style="padding-bottom:26px">
+  <h1>Shared milestones.</h1>
+  <p class="lead">The proposal as a page you can use. Beta&rsquo;s date has passed and four issues are still open. Decide what moves to Launch, then read what Beta carried over.</p>
+</div>
+
+<div class="w">
+<div class="proto sp" id="proto">
+  <div class="pbar">
+    <span class="pdots" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="purl">initiative &middot; prototype</span>
+    <span class="psample">Sample data. A made-up initiative. Not a Linear product.</span>
+  </div>
+
+  <div class="sph">
+    <div><h2>Offline mode</h2><p>Six projects, four shared milestones. The sample date is November 22, 2026.</p></div>
+    <div class="spt">
+      <div class="seg" role="group" aria-label="What the cells show">
+        <button type="button" id="allwork" aria-pressed="true">All work</button>
+        <button type="button" id="carried" aria-pressed="false">Carried over</button>
+      </div>
+      <button class="btn sm ghost" type="button" id="keysOpen">Keys</button>
+    </div>
+  </div>
+
+  <div class="spg">
+    <div class="sgw"><div class="sg" id="grid" role="grid" aria-label="Projects by shared milestone"></div></div>
+    <aside class="spp" id="panel" aria-label="The selected project in the selected milestone" aria-live="polite"></aside>
+  </div>
+
+  <div class="ssum"><b id="sumT">What Beta carried over</b><p id="sum" aria-live="polite"></p></div>
+
+  <div class="spf">
+    <span class="spm"><span id="msg" role="status"></span><button class="btn sm ghost" type="button" id="undo" disabled>Undo</button></span>
+    <span class="spk" aria-hidden="true"><kbd>&larr;</kbd><kbd>&rarr;</kbd><kbd>&uarr;</kbd><kbd>&darr;</kbd> move <kbd>Enter</kbd> open <kbd>M</kbd> move on <kbd>U</kbd> undo <kbd>C</kbd> carried <kbd>D</kbd> date <kbd>?</kbd> keys</span>
+  </div>
+</div>
+
+<dialog id="keys" aria-labelledby="keysT">
+  <h3 id="keysT">Keys</h3>
+  <ul class="plain keyl">
+    <li><span><kbd>&larr;</kbd> <kbd>&rarr;</kbd> <kbd>&uarr;</kbd> <kbd>&darr;</kbd></span><b>Move between projects and milestones</b></li>
+    <li><span><kbd>Enter</kbd></span><b>Go into the list of issues</b></li>
+    <li><span><kbd>J</kbd> <kbd>K</kbd></span><b>Next and previous issue</b></li>
+    <li><span><kbd>M</kbd></span><b>Move the issue to the next milestone</b></li>
+    <li><span><kbd>U</kbd></span><b>Undo the last change</b></li>
+    <li><span><kbd>C</kbd></span><b>Show carried-over work only</b></li>
+    <li><span><kbd>D</kbd></span><b>Change the milestone&rsquo;s date</b></li>
+    <li><span><kbd>Esc</kbd></span><b>Back to the grid</b></li>
+  </ul>
+  <div class="next"><button class="btn" type="button" id="keysX">Close</button></div>
+</dialog>
+
+<section style="border-top:0;padding-top:34px">
+  <div class="two">
+    <div><h2>What this replaces</h2>
+      <p>Today each project keeps its own copy of the milestone. Linear&rsquo;s docs say a milestone cannot be shared and has to be recreated in each project.</p>
+      <p>When an issue moves to a later milestone, Linear records it in that issue&rsquo;s history. I found no page that adds those moves up. I have no number for how many teams keep that sum in a spreadsheet. Finding out is the first step of the plan.</p></div>
+    <div><h2>Choices I made in this page</h2>
+      <ul class="plain">
+        <li><b>A person moves the work. The page keeps the record.</b><span>A cycle is a rhythm, so Linear rolls it over. A milestone is a promise, so someone decides.</span></li>
+        <li><b>No issues shows a dash, never 100%.</b><span>An empty milestone has not been met.</span></li>
+        <li><b>One date, edited once.</b><span>Change it in the column heading and every project follows.</span></li>
+        <li><b>Nothing new to fill in.</b><span>Carried in and carried on come from moves that are already recorded.</span></li>
+        <li><b>Every action has a key and an undo.</b><span>The page never asks you to confirm. It lets you take it back.</span></li>
+      </ul></div>
+  </div>
+  <div class="next"><a class="btn" href="index.html">Back to the proposal</a><a class="btn ghost" href="how.html">How I built this</a></div>
+</section>
+</div>
+</main><footer class="w foot"><span>Richard J. Valeo &middot; Georgetown, Colorado &middot; <a href="https://rjvaleo.github.io/">rjvaleo.github.io</a> &middot; <a href="https://www.linkedin.com/in/rjvaleo">LinkedIn</a></span><span>Public pages read on November 22, 2026. Nothing here comes from inside Linear.</span></footer><script src="assets/proto.js"></script></body></html>
